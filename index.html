@@ -89,7 +89,6 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Make an Appointment</a>
 
       </div>
 
@@ -236,7 +235,7 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-people-fill"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="303" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1143" data-purecounter-duration="1" class="purecounter"></span>
               <p>Members</p>
             </div>
           </div><!-- End Stats Item -->
@@ -348,69 +347,6 @@
       </div>
 
     </section><!-- /Services Section -->
-
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Appointment</h2>
-        <p>Ready to book your appointment? Choose a time that works best for you.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select" required="">
-                <option value="">Select Activities</option>
-                <option value="Department 1">Strength Training</option>
-                <option value="Department 2">Cardio Workouts</option>
-                <option value="Department 3">Yoga & Flexibility</option>
-                <option value="Department 3">High Intensity Interval Training</option>
-                <option value="Department 3">Nutrition & Wellness</option>
-              </select>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select" required="">
-                <option value="">Select Instructors</option>
-                <option value="Doctor 1">Hezel Godalla</option>
-                <option value="Doctor 2">Mariane Geraldino</option>
-                <option value="Doctor 3">Rose Ann Dela Cruz</option>
-                <option value="Doctor 3">Jecel Garbin</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-          </div>
-          <div class="mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-            <div class="text-center"><button type="submit">Make an Appointment</button></div>
-          </div>
-        </form>
-
-      </div>
-
-    </section><!-- /Appointment Section -->
 
     <!-- Activities Section -->
     <section id="activities" class="activities section">
@@ -907,82 +843,53 @@
       </div><!-- End Section Title -->
 
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2297.945980849205!2d123.87272066375712!3d12.659631205442947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0d799bffb697b%3A0x6df0de25a646c7b5!2sBoulevard!5e0!3m2!1sen!2sph!4v1741570217925!5m2!1sen!2sph" 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10094.556423879903!2d123.87529156904964!3d12.67338446197284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0d6c984000001%3A0xcca4c77ab197faa6!2sVilla%20Las%20Palmas%20Subdivision!5e0!3m2!1sen!2sph!4v1741842742174!5m2!1sen!2sph" 
             style="border:0; width: 100%; height: 270px;" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+    
     <!-- End Google Maps -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+          <!-- Location -->
           <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Location</h3>
-                <p>Zone 2, Bulan Sorsogon</p>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                      <h3>Location</h3>
+                      <p>Villa Las Palmas Subdivision, Bulan Sorsogon</p>
+                  </div>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+63 56 123 4567</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>h&mjr.gym@gmail.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
+          <!-- Call Us -->
+          <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                      <h3>Call Us</h3>
+                      <p>+63 56 123 4567</p>
+                  </div>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
+          </div>
+          <!-- Email Us -->
+          <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                      <h3>Email Us</h3>
+                      <p>h&mjr.gym@gmail.com</p>
+                  </div>
+              </div>
+          </div>
       </div>
-
+  </div>
+  
+            </div><!-- End Info Item -->
+            
     </section><!-- /Contact Section -->
 
   </main>
@@ -996,8 +903,8 @@
             <span class="sitename">H&M jr. Gym</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Boulevard Street</p>
-            <p>Zone 2, Bulan Sorsogon</p>
+            <p>Block 32 Villa Las Palmas</p>
+            <p>Sta. Remedios, Bulan Sorsogon</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+63 56 123 4567</span></p>
             <p><strong>Email:</strong> <span>h&mjr.gym@gmail.com</span></p>
           </div>
